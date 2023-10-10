@@ -23,16 +23,11 @@ public class Main {
     }     System.out.println("inserisci un numero");
         Scanner scanner=new Scanner(System.in);
         int numero = scanner.nextInt() ;
-        try{
-            if(numero <10){
-                System.out.println("Hai inserito il numero: " + numero);
-            }
-            else{
-                System.out.println("inserisci un valore minore di 10");
-            };
-
-        }catch(){
-            System.out.println("errore");
+        if(numero <10){
+        System.out.println("Hai inserito il numero: " + numero);
+        }
+        else{
+            System.out.println("inserisci un valore minore di 10");
         };
         System.out.println("inserisci la posizione in cui vuoi inserirlo" );
         int posizione = scanner.nextInt();
